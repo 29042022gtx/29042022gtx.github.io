@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(14px, 3vmin, 25px);
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+div {
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: clamp(14px, 3vmin, 25px);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    /* background-color: deepskyblue; */
+    /* border: 2px solid black; */
+    overflow: auto;
+}
+
+.header div {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    height: clamp(12vmin, 12vmin, 100px);
+    font-size: clamp(3vmin, 3vmin, 25px);
+    overflow: hidden;
+}
+
+.header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    float: left;
+    width: 15%;
+    font-size: 0;
+    line-height: 0;
+}
+
+.logo img {
+    height: clamp(9vmin, 9vmin, 80px);
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    float: left;
+    width: 70%;
+}
+
+.title h1 {
+    margin: 0;
+    padding: 0;
+    color:dodgerblue;
+    font-family:Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    white-space: nowrap;
+}
+
+.title p {
+    color: #222222;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 1vmin;
+    font-weight: bold;
+}
+
+.title a {
+    cursor: auto;
+    user-select:text ;
+}
+
+.language {
+    float: right;
+    width: 15%;
+}
+
+.language p {
+    padding-top: .8em;
+    color: #555555;
+    white-space: nowrap;
+}
+
+.language p:hover {
+    color: dodgerblue;
+}
+
+.addition {
+    text-align: center;
+    font-size: max(2vmin, 6px);
+    clear: both;
+}
+
+.menu div {
+    user-select:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    font-size: 1em;
+    height: 3em;
+    line-height: 3em;
+    /* border: 0.1em solid deeppink; */
+}
+
+.menu div:hover {
+    background-color: dodgerblue;
+    position: relative;
+}
+
+.menu div a {
+    display: none;
+    position: relative;
+    background-color:whitesmoke;
+    color: #555555;
+    min-width: 12em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu div:hover a {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: clamp(2.5vmin, 2.5vmin, 20px);
+    height: 3em;
+    line-height: 3em;
+}
+
+.dropbtn {
+    background-color: midnightblue;
+    user-select:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    height: 3em;
+    line-height: 3em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    /* border: 0.1em solid deeppink; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 10em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    height: 2.4em;
+    line-height: 2.4em;
+    font-size: clamp(2.5vmin, 2.5vmin, 20px);
+    /* border: 0.1em solid deeppink; */
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: dodgerblue;
+}
+
+.navigationbar {
+    background-color: midnightblue;
+    font-size: 0;
+    text-align: center;
+}
+
+.searchsection {
+    width: 100%;
+    height: 85vh;
+    font-size: clamp(3vmin, 3vmin, 25px);
+    background-image: url('images/truong.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position:top;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.searchsection .box {
+    background-color: #00366b88;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#222222;
+    width: 80%;
+    height: 8em;
+    font-size: clamp(2.5vmin, 2.5vmin, 25px);
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.searchsection select {
+    width: 25%;
+    height: 35%;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#222222;
+    font-size: 1em;
+    line-height: 2.5em;
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.searchsection input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#222222;
+    font-size: clamp(2.5vmin, 2.5vmin, 25px);
+    line-height: 2.5em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+    margin: auto;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.search button {
+    background-color: midnightblue;
+    width: 5em;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: clamp(3vmin, 3vmin, 25px);
+    line-height: 1em;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-50%);
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    border: none;
+    border-left: 0.5em solid midnightblue;
+    border-right: 0.5em solid midnightblue;
+}
+
+.searchsection button:active {
+    background: dodgerblue;
+    border-left: 0.5em solid dodgerblue;
+    border-right: 0.5em solid dodgerblue;
+}
+
+.searchsection button:hover {
+    border-left: 0.5em solid dodgerblue;
+}
+
+.search {
+    margin: 0;
+    padding: 0;
+    width: 73%;
+    height: 35%;
+    display: block;
+    float: right;
+    margin-left: 6;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+::placeholder {
+    color:#222222;
+    opacity: 0.8;
+}
+
+.button {
+    display: inline-block;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    text-decoration: none;
+    color: white;
+    line-height: 3em;
+    height: 3em;
+    /* border: 0.1em solid deeppink; */
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 1em;
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.box1 {
+    width: clamp(600px, 50vw, 50vw);
+    text-align: justify;
+    display: inline-block;
+    outline-offset: -2px;
+    /* outline: 2px solid dodgerblue; */
+    border: 2px solid grey;
+    margin-bottom: .1em;
+}
+
+.box2 {
+    width: clamp(250px, 30vw, 30vw);
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1em;
+}
+
+.box2 div {
+    text-align: left;
+    display: block;
+    text-align: left;
+}
+
+.box2 a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.box2 .p0 {
+    padding: .5em;
+    border: 0.1em solid midnightblue;
+}
+
+.box2 .p1 {
+    padding: .5em;
+    color: midnightblue;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.box3 {
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    .box2 {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .box {
+        width: inherit;
+    }
+}
+
+footer {
+    width: 100%;
+    font-size: clamp(14px, 3vmin, 25px);
+    color: white;
+    background-color: midnightblue;
+    overflow: auto;
+}
+
+footer p {
+    font-weight: normal;
+    line-height: 1.5em;
+    padding: 1em;
+    font-size: 0.8em;
+}
+
+footer a {
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.content {
+    width: 100%;
+    /* height: 90vh; */
+    text-align: center;
+    outline-offset: -2px;
+    /* outline: 2px solid dodgerblue; */
+    overflow: auto;
+}
+
+.content1 {
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+}
+
+.content1 h1 {
+    /* outline-offset: -2px;
+    outline: 2px solid dodgerblue; */
+    margin-top: .2em;
+}
+
+.content1 h2 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.container1 {
+    width: 95%;
+    font-size: clamp(14px, 3vmin, 25px);
+    text-align: left;
+    outline-offset: -2px;
+    outline: 2px solid grey;
+    overflow: auto;
+    height: 20em;
+    overflow: auto;
+    margin: auto;
+    /* box-shadow: .2em .2em 1em .4em #dddddd; */
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container1 h1 {
+    width: 100%;
+    text-align: center;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    outline-offset: -2px;
+    outline: 2px solid gray;
+    margin-bottom: .2em;
+    color: #222222;
+    text-decoration: underline;
+}
+
+.container1 a {
+    text-decoration: none;
+    display: block;
+    padding-left: 1em;
+    font-weight: 500;
+    color: #444444;
+}
+
+.bookshelf {
+    width: min(40em, 100%);
+    text-align: center;
+    overflow: auto;
+    margin: auto;
+}
+
+.bookshelf h1 {
+    padding-top: .2em;
+}
+
+.specialty {
+    width: min(12em, 30%);
+    aspect-ratio: 1/1;
+    display: inline-block;
+    margin: .2em;
+    border-radius: 5%;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: .1em .1em .2em 0em #dddddd;
+}
+
+.specialty img {
+    width: 100%;
+    aspect-ratio: 4/3; 
+    object-fit: cover;
+    border-radius: 5%;
+    display: block;
+    margin-bottom: .5em;
+}
+
+.specialty a {
+    display: block;
+    width: 12em;
+    height: 12em;
+    text-decoration: none;
+}
+
+.specialty p {
+    padding: .5em;
+    font-weight: bold;
+    color: midnightblue;
+    /* outline-offset: -2px;
+    outline: 2px solid dodgerblue; */
+    /* line-height: 4em;
+    height: 4em; */
+}
+
+.clear {
+    clear: both;
+}
+
+.tabdiv {
+    /* outline-offset: -2px;
+    outline: 2px solid black; */
+    font-size: 0;
+}
+
+.tabdiv h1 {
+    font-size: 1.5rem;
+}
+
+.tabdiv select {
+    font-size: .8rem;
+    display: block;
+    float: right;
+    padding: .2rem .2rem;
+}
+
+.tabdiv select option {
+    font-size: .8rem;
+    /* padding: 20px 20px;
+    margin: 1rem; */
+}
