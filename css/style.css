@@ -249,11 +249,11 @@ html {
     background-size: cover;
     background-position-y: center;
     background-position-x: center;
-    /* background-repeat: no-repeat; */
-    /* background-attachment: scroll; */
-    /* background-position:top; */
-    /* background-clip: content-box; */
-    /* background-origin: content-box; */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position:top;
+    background-clip: content-box;
+    background-origin: content-box;
 }
 
 .searchsect * {
@@ -265,7 +265,7 @@ html {
 
 .searchsect .box {
     background-color: #00366b88;
-    position: fixed;
+    position: absolute;
     top: 40%;
     transform: translateY(-50%);
     left: 50%;
