@@ -265,7 +265,7 @@ html {
 
 .searchsect .box {
     background-color: #00366b88;
-    position: absolute;
+    position: fixed;
     top: 40%;
     transform: translateY(-50%);
     left: 50%;
