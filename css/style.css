@@ -17,7 +17,7 @@
     outline: none; border: none;
     box-sizing: border-box;
     text-decoration: none;
-    transition: all .2s linear;
+/*     transition: all .2s linear; */
     /* transition: width none; */
 }
 
