@@ -129,7 +129,7 @@ html {
 }
 
 .login-form form {
-    width: min(25em, 95%);
+    width: 25em;
     background: #fff;
     padding: 1em;
     box-shadow: var(--box-shadow);
