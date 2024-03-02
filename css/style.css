@@ -22,7 +22,7 @@
 }
 
 html {
-    font-size: 15px;
+    /* font-size: 14px; */
     overflow-x: hidden;
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
