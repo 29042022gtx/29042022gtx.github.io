@@ -22,9 +22,15 @@
 }
 
 html {
-    font-size: 14px;
+    /* font-size: 14px; */
     overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
 }
+
+/* body {
+    height: 300rem;
+} */
 
 .header {
     font-family: Tahoma, sans-serif;
