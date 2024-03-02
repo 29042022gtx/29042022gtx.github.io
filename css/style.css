@@ -22,7 +22,7 @@
 }
 
 html {
-    font-size: clamp(14px, 3vmin, 3vmin);
+    font-size: 14px;
     overflow-x: hidden;
 }
 
@@ -33,8 +33,7 @@ html {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 3vmin;
-    height: 12vmin;
+    height: 4em;
 }
 
 .header * {
@@ -110,9 +109,9 @@ html {
     right: 0;
 }
 
-.login-form * {
+/* .login-form * {
     font-size: 3vmin;
-}
+} */
 
 .login-form #close-login-form {
     color: white;
@@ -193,7 +192,7 @@ html {
 .navbar * {
     font-weight: bold;
     user-select: none;
-    font-size: 2.5vmin;
+    font-size: 0.8rem;
     height: 3em;
     line-height: 3em;
     -webkit-user-drag: none;
@@ -259,8 +258,8 @@ html {
 .searchsect * {
     font-weight: bold;
     color: var(--black);
-    font-size: 2.5vmin;
-    line-height: 2.5em;
+    font-size: 0.8rem;
+    line-height: 1em;
 }
 
 .searchsect .box {
@@ -330,7 +329,7 @@ html {
 }
 
 footer {
-    font-size: 2.5vmin;
+    font-size: .8rem;
     padding: .5em 1em;
     background-color: var(--darkblue);
 }
@@ -358,7 +357,6 @@ footer a {
 
 .text {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
     display: inline-block;
     padding: 0.5em;
 }
@@ -430,7 +428,6 @@ footer a {
     width: 95%;
     height: 25em;
     margin: 1em auto;
-    font-size: clamp(14px, 3vmin, 3vmin);
     outline-offset: -2px;
     outline: 2px solid grey;
 }
