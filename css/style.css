@@ -22,7 +22,7 @@
 }
 
 html {
-    /* font-size: 14px; */
+    font-size: 15px;
     overflow-x: hidden;
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
@@ -59,18 +59,26 @@ html {
 }
 
 .header .title {
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .header .title h1 {
     font-size: 2em;
     color: var(--gold);
+    display: flex;
+    justify-content: center;
 }
 
 .header .title h1 span {
     color:var(--skyblue);
+}
+
+.header .title p {
+    display: flex;
+    justify-content: center;
 }
 
 .header .login {
@@ -104,15 +112,16 @@ html {
     position: fixed;
     top: 0; right: -100%;
     transition: all .5s linear;
+    overflow: hidden;
 }
 
 .login-form.active {
     right: 0;
 }
 
-/* .login-form * {
-    font-size: 3vmin;
-} */
+.login-form * {
+    overflow: hidden;
+}
 
 .login-form #close-login-form {
     color: white;
@@ -183,9 +192,11 @@ html {
 }
 
 .navbar {
+    width: 100%;
     background-color: var(--darkblue);
     text-align: center;
     font-size: 0;
+    overflow-x: hidden;
 }
 
 .navbar * {
@@ -212,7 +223,7 @@ html {
 .navbar .box .dropdown {
     visibility: hidden;
     opacity: 0;
-    position: absolute;
+    position: fixed;
     min-width: 10em;
     text-align: left;
     height: fit-content;
