@@ -244,7 +244,7 @@ html {
 
 .searchsect {
     width: 100%;
-    height: 90vh;
+    height: 40em;
     background-image: url('/images/truong.png');
     background-size: cover;
     background-position-y: center;
@@ -266,7 +266,7 @@ html {
 .searchsect .box {
     background-color: #00366b88;
     position: relative;
-    top: 40%; left: 50%;
+    top: 30%; left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     height: 8em;
