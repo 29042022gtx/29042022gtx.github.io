@@ -121,7 +121,7 @@ html {
     position: absolute;
     top: 0; right: 0;
     cursor: pointer;
-    background-image: url('images/closeicon.png');
+    background-image: url('/images/closeicon.png');
     width: 2em;
     aspect-ratio: 1/1;
     background-size: cover;
