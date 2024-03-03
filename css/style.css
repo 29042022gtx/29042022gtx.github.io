@@ -243,6 +243,7 @@ html {
 }
 
 .navbar .box:hover .dropdown {
+    position: absolute;
     visibility: visible;
     opacity: 1;
 }
